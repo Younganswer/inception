@@ -17,6 +17,7 @@
 ## Requirements
 ### [Docker](https://www.docker.com)
 * Download docker for your OS
+#### Current version of this repository
 * Docker version 20.10.23 (docker -v)
 * Docker Compose version v2.15.1 (docker-compose -v)
 <br/><br/><br/>
