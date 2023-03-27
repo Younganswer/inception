@@ -5,6 +5,7 @@
 ## Index
 * [Summary](#Summary)
 * [Requirements](#Requirements)
+* [Usage](#Usage)
 * [Refereces](#References)
 * [Contact](#Contact)
 <br/><br/><br/>
@@ -16,7 +17,17 @@
 ## Requirements
 ### [Docker](https://www.docker.com)
 * Download docker for your OS
+* Docker version 20.10.23 (docker -v)
+* Docker Compose version v2.15.1 (docker-compose -v)
 <br/><br/><br/>
+
+## Usage
+### Supported Makefile commands
+* `make` or `make up`: Build images and containers and run containers
+* `make down`: Stop and remove containers, networks, images
+* `make start`: Start containers
+* `make stop`: Stop containers
+You can check the status of the containers with `docker ps`
 
 ## References
 #### [Docker](https://www.docker.com)
