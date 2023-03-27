@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sed -i "s/db_name/$db_name/g" /var/www/html/wp-config.php
+sed -i "s/db_user/$db_user/g" /var/www/html/wp-config.php
+sed -i "s/db_pwd/$db_pwd/g" /var/www/html/wp-config.php
+
 #
 # mkdir -p /var/www/html
 # WARNING: rm -rf /var/www/html/*
@@ -12,10 +16,6 @@ wp plugin install redis-cache --activate --allow-root
 wp plugin update --all --allow-root
 wp redis enable --allow-root
 #
-
-sed -i "s/db_name/$db_name/g" /var/www/html/wp-config.php
-sed -i "s/db_user/$db_user/g" /var/www/html/wp-config.php
-sed -i "s/db_pwd/$db_pwd/g" /var/www/html/wp-config.php
 
 sed -i 's/listen = \/run\/php\/php7.3-fpm.sock/listen = 9000/g' /etc/php/7.3/fpm/pool.d/www.conf
 sed -i 's/127.0.0.1/0.0.0.0:9000/g' /etc/php/7.3/fpm/pool.d/www.conf
