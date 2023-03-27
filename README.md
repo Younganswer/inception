@@ -23,8 +23,8 @@
 
 ## Usage
 ### Supported Makefile commands
-* `make` or `make up`: Run and build containers, networks and images
-* `make down`: Stop and remove containers, networks and images
+* `make` or `make up`: Run and build containers, networks, volumes and images
+* `make down`: Stop and remove containers, networks, volumes and images
 * `make start`: Start containers
 * `make stop`: Stop containers
 
