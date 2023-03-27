@@ -14,8 +14,7 @@
 <br/><br/><br/>
 
 ## Requirements
-### Docker
-[Download docker](https://www.docker.com)
+### [Docker](https://www.docker.com)
 * Download docker for your OS
 <br/><br/><br/>
 
