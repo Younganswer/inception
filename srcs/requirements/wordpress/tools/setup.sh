@@ -1,16 +1,10 @@
 #!/bin/bash
 
 #
-# wordpress setup command it will be executed before docker image build
 # mkdir -p /var/www/html
 # WARNING: rm -rf /var/www/html/*
-# curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-# chmod +x wp-cli.phar
-# mv wp-cli.phar /usr/local/bin/wp
 cd /var/www/html
 # wp core download --allow-root
-# rm wp-config-sample.php
-# mv /wp-config.php .
 wp core install --url=$DOMAIN_NAME/ --title=$WP_TITLE --admin_user=$WP_ADMIN_USR --admin_password=$WP_ADMIN_PWD --admin_email=$WP_ADMIN_EMAIL --skip-email --allow-root
 wp user create $WP_USR $WP_EMAIL --role=author --user_pass=$WP_PWD --allow-root
 wp theme install astra --activate --allow-root
