@@ -21,6 +21,22 @@
 * Docker Compose version v2.15.1 (docker-compose -v)
 <br/><br/><br/>
 
+## Install
+#### .env
+	$ mv ./srcs/.env.example ./srcs/.env
+* Change name .env.example to .env
+* Set your own value of environment variables
+<br/>
+
+#### Dockerfile
+* You can change the contents of the Dockerfile to suit your needs.
+<br/>
+
+#### Volumes
+* .../mariadb/data, .../nginx/logs, .../wordpress/html directories are linked with the volumes of the containers.
+* If you modify data of one of those directories, There will be some problems. So, do not modify data of those directories.
+<br/><br/><br/>
+
 ## Usage
 ### Supported Makefile commands
 * `make` or `make up`: Run and build containers, networks, volumes and images
