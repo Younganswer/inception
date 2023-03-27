@@ -24,9 +24,9 @@
 ## Install
 #### .env
 	$ mv ./srcs/.env.example ./srcs/.env
-* Change name .env.example to .env
+* Change name `.env.example` to `.env`
 * Set your own value of environment variables
-* **You have to protect your private information**
+* **You have to protect your private information in `.env` file**
 <br/>
 
 #### Dockerfile
@@ -34,7 +34,7 @@
 <br/>
 
 #### Volumes
-* .../mariadb/data, .../nginx/logs, .../wordpress/html directories are linked with the volumes of the containers.
+* `.../mariadb/data`, `.../nginx/logs`, `.../wordpress/html` directories are linked with the volumes of the containers.
 * If you modify data of one of those directories, There will be some problems. So, do not modify data of those directories.
 <br/><br/><br/>
 
