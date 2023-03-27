@@ -26,7 +26,7 @@
 	$ mv ./srcs/.env.example ./srcs/.env
 * Change name .env.example to .env
 * Set your own value of environment variables
-* ***You have to protect your private information***
+* **You have to protect your private information**
 <br/>
 
 #### Dockerfile
