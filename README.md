@@ -27,7 +27,9 @@
 * `make down`: Stop and remove containers, networks, images
 * `make start`: Start containers
 * `make stop`: Stop containers
+
 You can check the status of the containers with `docker ps`
+<br/><br/><br/>
 
 ## References
 #### [Docker](https://www.docker.com)
