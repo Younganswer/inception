@@ -13,5 +13,8 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 	mv wp-cli.phar /usr/local/bin/wp
 
 COPY ./tools/setup.sh /
+COPY ./tools/php_setup.sh /
 
-RUN chmod +x /setup.sh
+RUN chmod +x /setup.sh && chmod +x /php_setup.sh
+
+CMD ["/php_setup.sh"]
