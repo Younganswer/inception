@@ -5,7 +5,6 @@ up:
 	@mkdir -p ./srcs/requirements/nginx/logs
 	@${DOCKER_COMPOSE} up --build -d
 	@sleep 10
-	@docker exec wordpress /bin/bash /setup.sh 2>err.log
 
 down:
 	@${DOCKER_COMPOSE} down
