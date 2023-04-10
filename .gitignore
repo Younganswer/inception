@@ -1,4 +1,5 @@
 .DS_Store
+inception.pem
 srcs/.env
 srcs/requirements/mariadb/data
 srcs/requirements/nginx/logs
