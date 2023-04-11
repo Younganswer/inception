@@ -18,8 +18,8 @@
 ### [Docker](https://www.docker.com)
 * Download docker for your OS
 ### Current version of docker with this repository
-* Docker version 20.10.23 (docker -v)
-* Docker Compose version v2.15.1 (docker-compose -v)
+* Docker version 20.10.23
+* Docker Compose version v2.15.1
 <br/><br/><br/>
 
 ## Install
@@ -36,7 +36,7 @@
 
 ### Volumes
 * `.../mariadb/data`, `.../nginx/logs`, `.../wordpress/html` directories are linked with the volumes of the containers.
-* If you modify data of one of those directories, There will be some problems. So, do not modify data of those directories.
+* If you modify data of one of those directories, There will be some problems.
 <br/><br/><br/>
 
 ## Usage
@@ -46,7 +46,7 @@
 * `make start`: Start containers
 * `make stop`: Stop containers
 
-You can check the status of the containers with `docker ps`
+You can get the status of the containers with `docker ps`
 <br/><br/><br/>
 
 ## References
