@@ -29,7 +29,7 @@
 * Set your own value of environment variables
 * **You have to protect your private information in `.env` file**
 * Change KEYS in `.../wordpress/html/wp-config.php` to your own value.
-	* You can generate KEYS with [this site](https://api.wordpress.org/secret-key/1.1/salt/)
+	* You can generate KEYS with [WP-KEY-Generator](https://api.wordpress.org/secret-key/1.1/salt/)
 <br/>
 
 ### Dockerfile
