@@ -1,9 +1,5 @@
 #!/bin/bash
 
-sed -i "s/db_name/$db_name/g" /var/www/html/wp-config.php
-sed -i "s/db_user/$db_user/g" /var/www/html/wp-config.php
-sed -i "s/db_pwd/$db_pwd/g" /var/www/html/wp-config.php
-
 #
 # mkdir -p /var/www/html
 # WARNING: rm -rf /var/www/html/*
