@@ -16,5 +16,3 @@ wp plugin update --all --allow-root
 # wp plugin install redis-cache --activate --allow-root
 # wp redis enable --allow-root
 #
-
-sh /php_setup.sh
