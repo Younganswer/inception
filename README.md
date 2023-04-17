@@ -58,5 +58,8 @@ You can get the status of the containers with `docker ps`
 #### [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 <br/><br/><br/>
 
+## Result
+### ![Expected diagram](./assets/diagram.png)
+
 ## Contact
 #### younganswer@kookmin.ac.kr
