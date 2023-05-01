@@ -16,6 +16,10 @@ start:
 stop:
 	@${DOCKER_COMPOSE} stop
 
-.PHONY: up down stop start
+fclean:
+	@docker rmi -f $$(docker images -a -q)
+	@docker volume rm $$(docker volume ls -q)
 
-.NOTPARALLEL: up down stop start
+.PHONY: up down stop start fclean
+
+.NOTPARALLEL: up down stop start fclean
