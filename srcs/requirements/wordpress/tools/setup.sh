@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # wp_setup
+cd /var/www/html
 mv /wp-config.php .
 rm ./wp-config-sample.php
 wp core install --url=$DOMAIN_NAME/ --title=$WP_TITLE --admin_user=$WP_ADMIN_USR --admin_password=$WP_ADMIN_PWD --admin_email=$WP_ADMIN_EMAIL --skip-email --allow-root
