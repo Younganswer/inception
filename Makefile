@@ -3,9 +3,8 @@ DOCKER_COMPOSE = docker-compose -f ./srcs/docker-compose.yml
 up:
 	@mkdir -p ./srcs/requirements/mariadb/data
 	@mkdir -p ./srcs/requirements/nginx/logs
+	@mkdir -p ./srcs/requirements/wordpress/html
 	@${DOCKER_COMPOSE} up --build -d
-	@sleep 1
-	@docker exec wordpress /bin/bash /wp_setup.sh 1>/dev/null 2>&1
 
 down:
 	@${DOCKER_COMPOSE} down
