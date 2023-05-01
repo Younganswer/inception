@@ -16,8 +16,8 @@ stop:
 	@${DOCKER_COMPOSE} stop
 
 fclean:
-	@docker rmi -f $$(docker images -a -q)
-	@docker volume rm $$(docker volume ls -q)
+	@docker rmi -f $$(docker images -a -q) 2>/dev/null || true
+	@docker volume rm $$(docker volume ls -q) 2>/dev/null || true
 
 .PHONY: up down stop start fclean
 
