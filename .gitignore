@@ -3,4 +3,4 @@ inception.pem
 srcs/.env
 srcs/requirements/mariadb/data
 srcs/requirements/nginx/logs
-srcs/requirements/worpress/html
+srcs/requirements/wordpress/html
