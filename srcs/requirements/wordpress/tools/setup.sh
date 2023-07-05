@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 5
+
 # wp_setup
 cd /var/www/html
 mv /wp-config.php .
