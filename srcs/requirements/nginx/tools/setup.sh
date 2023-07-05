@@ -12,6 +12,6 @@ sed -i "7i\ \   ssl_certificate $CERTS_;" /etc/nginx/sites-available/default
 #sed -i '41s/.*/\taccess_log \/var\/log\/nginx\/access.log debug;/' /etc/nginx/nginx.conf
 #sed -i '42s/.*/\terror_log \/var\/log\/nginx\/error.log debug;/' /etc/nginx/nginx.conf
 
-cat /etc/nginx/nginx.conf
+#cat /etc/nginx/nginx.conf
 
 nginx -g "daemon off;"

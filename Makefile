@@ -1,4 +1,4 @@
-DOCKER_COMPOSE = docker-compose -f ./srcs/docker-compose.yml
+DOCKER_COMPOSE = docker compose -f ./srcs/docker-compose.yml
 
 up:
 	@mkdir -p ./srcs/requirements/mariadb/data
