@@ -10,6 +10,6 @@ echo "FLUSH PRIVILEGES;" >> mariadb.sql
 
 mysql < mariadb.sql
 
-kill $(cat /var/run/mysqld/mysqld.pid)
+#kill $(cat /var/run/mysqld/mysqld.pid)
 
 mysqld
